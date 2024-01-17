@@ -1,0 +1,46 @@
+﻿@model ClienteModel
+@{
+    ViewData["Title"] = "Cadastrar";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Cadastrar Cliente</h1>
+</div>
+
+<form asp-controller="Clientes" asp-action="Create" method="post">
+    <fieldset >
+        <legend>Informações </legend>
+
+        <div class="mb-3">
+            <label for="Nome" class="form-label">Nome*</label>
+            <input required asp-for="Nome" type="text" id="nome" class="form-control" placeholder="Nome Completo">
+        </div>
+
+        <div class="mb-3">
+            <label for="Emp" class="form-label">Empresa</label>
+            <input type="text" asp-for="Empresa" id="emp" class="form-control" placeholder="Empresa">
+        </div>
+
+        <div class="mb-3">
+            <label for="Email" class="form-label">E-mail Principal*</label>
+            <input required asp-for="EmailPricipal" type="email" id="email" class="form-control" placeholder="E-mail Pricipal"></br>
+            <input type="email" asp-for="Email2" id="email" class="form-control" placeholder="E-mail 2 opcional"></br>
+            <input type="email" asp-for="Email3" id="email" class="form-control" placeholder="E-mail 3 opcional"></br>
+            <input type="email" asp-for="Email4" id="email" class="form-control" placeholder="E-mail 4 opcional"></br>
+        </div>
+
+        <div class="mb-3">
+            <label for="Telp" class="form-label">Tel. Pessoal</label>
+            <input type="tel" id="telp" asp-for="TelP" class="form-control" placeholder="Telefone Pessoal">
+        </div>
+
+        <div class="mb-3">
+            <label for="Telc" class="form-label">Tel. Comercial</label>
+            <input type="tel" id="nome" asp-for="TelC" class="form-control" placeholder="Telefone Comercial">
+        </div>
+       
+        <a class="btn btn-outline-secondary btn-block" asp-controller="Clientes" asp-action="Index" role="button">Voltar</a>
+        <button type="submit" class="btn btn-primary btn-block">Cadastrar</button>
+        </br>
+    </fieldset>
+</form>
