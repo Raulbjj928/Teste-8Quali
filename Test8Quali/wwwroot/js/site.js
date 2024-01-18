@@ -3,6 +3,7 @@
 
 // Write your JavaScript code.
 $('#table-clientes').DataTable({
+    "dom": '<"top"f>rt<"bottom"lp>',
     "ordering": true,
     "paging": true,
     "searching": true,

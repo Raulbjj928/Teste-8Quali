@@ -44,9 +44,17 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "bootstrap": {
+              "target": "Package",
+              "version": "[5.3.2, )"
+            },
             "jquery.datatables": {
               "target": "Package",
               "version": "[1.10.15, )"
+            },
+            "materialize": {
+              "target": "Package",
+              "version": "[0.97.6, )"
             }
           },
           "imports": [

@@ -40,7 +40,8 @@ namespace Test8Quali.Servicos
         {
             id++;
             cliente.Id = id;
-            _clientes.Add(cliente);
+            _clientes.Add(cliente); 
+
             return cliente;
         }
         
