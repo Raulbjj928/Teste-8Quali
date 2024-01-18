@@ -14,7 +14,7 @@
     
     <h1 class="display-4">Lista de Clientes</h1>
 
-    <table class="table">
+    <table class="table" id="table-clientes">
         <thead>
             <tr>
                 <th scope="col">ID</th>
@@ -53,4 +53,6 @@
     <div class="d-grid gap-2 d-md-flex justify-content-md-start">
         <a class="btn btn-success" role="button" asp-controller="Clientes" asp-action="Create">Cadastrar Cliente</a>
     </div>
+    <script src="https://cdn.datatables.net/v/dt/dt-1.13.8/datatables.min.js"></script>
+    
 </div>

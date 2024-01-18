@@ -6,4 +6,8 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="jquery.datatables" Version="1.10.15" />
+  </ItemGroup>
+
 </Project>
