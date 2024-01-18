@@ -4,12 +4,6 @@
     ViewData["Title"] = "Lista de Clientes";
 }
 
-<div>
-    <label>Buscar Cliente</label>
-    <input type="search" id="email" class="form-control" placeholder="Ex: João, exemplo@gmail.com"></br>
-    <button type="submit" class="btn btn-primary btn-block">Buscar</button>
-</div>
-
 <div class="text-center">
     
     <h1 class="display-4">Lista de Clientes</h1>
@@ -47,9 +41,9 @@
                     </tr>
                 }
             }
-
         </tbody>
     </table>
+
     <div class="d-grid gap-2 d-md-flex justify-content-md-start">
         <a class="btn btn-success" role="button" asp-controller="Clientes" asp-action="Create">Cadastrar Cliente</a>
     </div>
